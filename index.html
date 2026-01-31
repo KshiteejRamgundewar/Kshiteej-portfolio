@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" class="is-smooth-scroll-compatible">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshiteej Ramgundewar | Engineer & Data Scientist</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0a0a0a',
+                        accent: '#64ffda',
+                        secondary: '#8892b0',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-white overflow-hidden">
+
+    <!-- Loading Screen -->
+    <div class="loader fixed inset-0 z-50 bg-black flex items-center justify-center">
+        <div class="loader-content text-center">
+            <div class="text-4xl font-display font-bold mb-4 tracking-tighter counter">0</div>
+            <div class="w-48 h-1 bg-gray-800 rounded-full overflow-hidden">
+                <div class="loader-bar h-full bg-white w-0"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor fixed w-4 h-4 bg-white rounded-full pointer-events-none z-50 mix-blend-difference transition-transform duration-100 ease-out hidden md:block"></div>
+    <div class="cursor-follower fixed w-10 h-10 border border-white rounded-full pointer-events-none z-50 transition-transform duration-300 ease-out hidden md:block"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-40 px-6 py-6 mix-blend-difference text-white flex justify-between items-center opacity-0 nav-animate">
+        <a href="#" class="text-xl font-display font-bold tracking-tighter">KR.</a>
+        <div class="hidden md:flex gap-8 font-mono text-sm">
+            <a href="#about" class="hover:text-accent transition-colors">About</a>
+            <a href="#skills" class="hover:text-accent transition-colors">Skills</a>
+            <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+            <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Scroll Container -->
+    <div data-scroll-container id="main-container">
+
+        <!-- Hero Section -->
+        <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden" data-scroll-section>
+            <div id="canvas-container" class="absolute inset-0 z-0"></div>
+            
+            <div class="relative z-10 text-center px-4 max-w-5xl">
+                <p class="hero-text opacity-0 transform translate-y-10 font-mono text-accent mb-4">Hi, I'm Kshiteej Ramgundewar</p>
+                <h1 class="hero-title opacity-0 transform translate-y-10 text-5xl md:text-8xl font-display font-bold leading-tight mb-6">
+                    Building <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Systems</span><br>
+                    That <span class="italic text-accent">Think</span>.
+                </h1>
+                <p class="hero-sub opacity-0 transform translate-y-10 text-secondary text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                    Computer Science Engineer & Data Scientist specializing in AI, automation, and scalable web architectures.
+                </p>
+                
+                <div class="hero-scroll opacity-0 mt-16 animate-bounce">
+                    <span class="text-xs font-mono text-secondary">SCROLL TO EXPLORE</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="relative py-32 px-6 md:px-20" data-scroll-section>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div data-scroll data-scroll-speed="1" class="relative">
+                    <div class="w-full aspect-[4/5] bg-gray-900 overflow-hidden relative group rounded-sm border border-gray-800">
+                        <!-- Placeholder for Portrait -->
+                         <div class="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-purple-900/20"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-700 font-mono text-sm p-8 text-center">
+                            [Interactive Portrait]<br>Hover to reveal structure
+                        </div>
+                        <div class="absolute inset-0 border border-white/10 m-4"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="section-title text-4xl md:text-6xl font-display font-bold mb-8" data-scroll data-scroll-speed="0.5">
+                        The Architect<br>Behind The Code
+                    </h2>
+                    <div class="space-y-6 text-secondary text-lg leading-relaxed reveal-text">
+                        <p>
+                            I operate at the intersection of data and design. My journey began with simple scripts and evolved into complex intelligent systems.
+                        </p>
+                        <p>
+                            With a background in Computer Science Engineering and a BS in Data Science, I don't just write code—I engineer solutions. Whether it's training a neural network or optimizing a React frontend, my goal is always the same: efficiency, elegance, and impact.
+                        </p>
+                        <div class="pt-8 flex gap-12 font-mono text-sm text-white">
+                            <div>
+                                <span class="block text-accent text-3xl font-display mb-1">3+</span>
+                                Years Experience
+                            </div>
+                            <div>
+                                <span class="block text-accent text-3xl font-display mb-1">20+</span>
+                                Projects Built
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-32 px-6 md:px-20 bg-dark" data-scroll-section>
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 border-b border-gray-800 pb-10">
+                    <h2 class="text-4xl md:text-6xl font-display font-bold">Technical<br>Arsenal</h2>
+                    <p class="text-secondary font-mono mt-4 md:mt-0">My toolkit for building the future.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Skill Card 1 -->
+                    <div class="skill-card p-8 border border-gray-800 hover:border-accent transition-colors duration-300 group bg-gray-900/20 backdrop-blur-sm">
+                        <h3 class="text-xl font-display font-bold mb-4 text-white group-hover:text-accent">Core</h3>
+                        <ul class="space-y-2 font-mono text-sm text-secondary">
+                            <li>Python & C++</li>
+                            <li>Data Structures</li>
+                            <li>Algorithms</li>
+                            <li>System Design</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Skill Card 2 -->
+                    <div class="skill-card p-8 border border-gray-800 hover:border-accent transition-colors duration-300 group bg-gray-900/20 backdrop-blur-sm">
+                        <h3 class="text-xl font-display font-bold mb-4 text-white group-hover:text-accent">AI & Data</h3>
+                        <ul class="space-y-2 font-mono text-sm text-secondary">
+                            <li>TensorFlow / PyTorch</li>
+                            <li>Pandas & NumPy</li>
+                            <li>Computer Vision</li>
+                            <li>NLP</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 3 -->
+                    <div class="skill-card p-8 border border-gray-800 hover:border-accent transition-colors duration-300 group bg-gray-900/20 backdrop-blur-sm">
+                        <h3 class="text-xl font-display font-bold mb-4 text-white group-hover:text-accent">Web</h3>
+                        <ul class="space-y-2 font-mono text-sm text-secondary">
+                            <li>React.js / Next.js</li>
+                            <li>Node.js</li>
+                            <li>Three.js / WebGL</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 4 -->
+                    <div class="skill-card p-8 border border-gray-800 hover:border-accent transition-colors duration-300 group bg-gray-900/20 backdrop-blur-sm">
+                        <h3 class="text-xl font-display font-bold mb-4 text-white group-hover:text-accent">Tools</h3>
+                        <ul class="space-y-2 font-mono text-sm text-secondary">
+                            <li>Git & GitHub</li>
+                            <li>Docker</li>
+                            <li>AWS / GCP</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Horizontal Scroll) -->
+        <section id="projects" class="py-20 relative overflow-hidden" data-scroll-section>
+            <div class="project-wrapper h-screen flex flex-col justify-center">
+                <div class="px-6 md:px-20 mb-12">
+                     <h2 class="text-4xl md:text-6xl font-display font-bold">Selected<br>Works</h2>
+                </div>
+                
+                <!-- Horizontal Scroll Container -->
+                <div class="pin-wrap-container h-[60vh] overflow-hidden">
+                    <div class="pin-wrap flex gap-10 pl-6 md:pl-20 h-full w-[300vw] md:w-[200vw]">
+                        
+                        <!-- Project 1 -->
+                        <div class="project-card relative w-[80vw] md:w-[60vh] h-full flex-shrink-0 group overflow-hidden border border-gray-800 cursor-pointer">
+                            <img src="images/project1.jpg" alt="AI Project" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-80">
+                            <div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black to-transparent">
+                                <span class="font-mono text-accent text-sm mb-2 block">AI / COMPUTER VISION</span>
+                                <h3 class="text-3xl font-display font-bold">Neural Sight</h3>
+                                <p class="text-secondary mt-2 text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">Real-time object detection system optimized for edge devices.</p>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card relative w-[80vw] md:w-[60vh] h-full flex-shrink-0 group overflow-hidden border border-gray-800 cursor-pointer">
+                            <img src="images/project2.jpg" alt="Web Project" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-80">
+                            <div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black to-transparent">
+                                <span class="font-mono text-accent text-sm mb-2 block">FULL STACK / REACT</span>
+                                <h3 class="text-3xl font-display font-bold">CryptoDash</h3>
+                                <p class="text-secondary mt-2 text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">Interactive cryptocurrency analytics dashboard with live websocket data.</p>
+                            </div>
+                        </div>
+
+                         <!-- Project 3 -->
+                        <div class="project-card relative w-[80vw] md:w-[60vh] h-full flex-shrink-0 group overflow-hidden border border-gray-800 cursor-pointer">
+                            <img src="images/project3.jpg" alt="Data Project" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-80">
+                            <div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black to-transparent">
+                                <span class="font-mono text-accent text-sm mb-2 block">DATA SCIENCE</span>
+                                <h3 class="text-3xl font-display font-bold">Predictive Flow</h3>
+                                <p class="text-secondary mt-2 text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">Traffic pattern prediction model using historical urban data.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience / Timeline -->
+        <section id="experience" class="py-32 px-6 md:px-20" data-scroll-section>
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-6xl font-display font-bold mb-16 text-center">Journey</h2>
+                
+                <div class="relative border-l border-gray-800 ml-4 md:ml-0 pl-10 md:pl-20 space-y-20">
+                    
+                    <!-- Item 1 -->
+                    <div class="relative reveal-text">
+                        <span class="absolute -left-[45px] md:-left-[85px] top-2 w-3 h-3 bg-accent rounded-full shadow-[0_0_10px_rgba(100,255,218,0.5)]"></span>
+                        <div class="font-mono text-accent mb-2">2024 - Present</div>
+                        <h3 class="text-2xl font-display font-bold text-white">Advanced AI Engineer</h3>
+                        <p class="text-sm font-mono text-gray-500 mb-4">Tech Corp / Startup</p>
+                        <p class="text-secondary leading-relaxed">Leading development on generative AI models and integrating them into production-grade web applications.</p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative reveal-text">
+                        <span class="absolute -left-[45px] md:-left-[85px] top-2 w-3 h-3 bg-gray-600 rounded-full"></span>
+                        <div class="font-mono text-accent mb-2">2022 - 2024</div>
+                        <h3 class="text-2xl font-display font-bold text-white">Full Stack Developer</h3>
+                        <p class="text-sm font-mono text-gray-500 mb-4">Freelance & Contract</p>
+                        <p class="text-secondary leading-relaxed">Built scalable web solutions for clients, focusing on performance optimization and modern UI/UX principles.</p>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="relative reveal-text">
+                        <span class="absolute -left-[45px] md:-left-[85px] top-2 w-3 h-3 bg-gray-600 rounded-full"></span>
+                        <div class="font-mono text-accent mb-2">2019 - 2023</div>
+                        <h3 class="text-2xl font-display font-bold text-white">BS in Data Science</h3>
+                        <p class="text-sm font-mono text-gray-500 mb-4">University / Institute</p>
+                        <p class="text-secondary leading-relaxed">Specialized in Machine Learning algorithms, statistical analysis, and big data technologies.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="min-h-screen py-32 px-6 md:px-20 flex items-center bg-dark relative overflow-hidden" data-scroll-section>
+            <!-- Background Text -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap opacity-5 pointer-events-none">
+                <h2 class="text-[20vw] font-display font-bold stroke-text">CONTACT</h2>
+            </div>
+
+            <div class="max-w-4xl mx-auto w-full relative z-10">
+                <div class="text-center mb-16">
+                    <p class="font-mono text-accent mb-4">WHAT'S NEXT?</p>
+                    <h2 class="text-5xl md:text-7xl font-display font-bold mb-8">Let's Build The Future</h2>
+                    <p class="text-secondary text-lg max-w-xl mx-auto">
+                        Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                </div>
+
+                <div class="flex justify-center gap-8 mb-16">
+                    <a href="mailto:kshiteej@example.com" class="px-8 py-4 border border-accent text-accent font-mono hover:bg-accent/10 transition-colors duration-300">
+                        Say Hello
+                    </a>
+                </div>
+
+                <footer class="flex flex-col md:flex-row justify-between items-center text-sm font-mono text-gray-600 pt-20 border-t border-gray-900">
+                    <p>&copy; 2026 Kshiteej Ramgundewar.</p>
+                    <div class="flex gap-6 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-accent transition-colors">GitHub</a>
+                        <a href="#" class="hover:text-accent transition-colors">LinkedIn</a>
+                        <a href="#" class="hover:text-accent transition-colors">Twitter</a>
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="js/main.js"></script>
+
+<script>
+/**
+ * Iframe 元素高亮注入脚本
+ * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
+ *
+ * 使用方法：
+ * 1. 将此脚本添加到目标网站的 HTML 中
+ * 2. 或通过浏览器扩展、用户脚本等方式注入
+ */
+
+(function () {
+  "use strict";
+
+  // 检查是否在 iframe 中
+  if (window.self === window.top) {
+    return; // 不在 iframe 中，不执行
+  }
+
+  // 检查是否已经初始化过
+  if (window.__iframeHighlightInitialized) {
+    return;
+  }
+  window.__iframeHighlightInitialized = true;
+  console.log("Iframe 高亮脚本已加载");
+
+  // 创建高亮覆盖层
+  var overlay = document.createElement("div");
+  overlay.id = "iframe-highlight-overlay";
+  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
+
+  // 创建悬停高亮框（虚线边框）
+  var highlightBox = document.createElement("div");
+  highlightBox.id = "iframe-highlight-box";
+  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
+
+  // 创建选中节点的常驻高亮框（实线边框）
+  var selectedBox = document.createElement("div");
+  selectedBox.id = "iframe-selected-box";
+  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
+
+  // 创建悬停标签显示
+  var tagLabel = document.createElement("div");
+  tagLabel.id = "iframe-tag-label";
+  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
+
+  // 创建选中节点标签
+  var selectedLabel = document.createElement("div");
+  selectedLabel.id = "iframe-selected-label";
+  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
+  overlay.appendChild(highlightBox);
+  overlay.appendChild(selectedBox);
+  overlay.appendChild(tagLabel);
+  overlay.appendChild(selectedLabel);
+  document.body.appendChild(overlay);
+
+  // 存储当前选中的元素
+  var selectedElement = null;
+  var highlightEnabled = false;
+
+  // 更新选中元素的高亮显示
+  function updateSelectedHighlight(element) {
+    console.log("updateSelectedHighlight called with:", element);
+    if (!element) {
+      selectedBox.style.display = "none";
+      selectedLabel.style.display = "none";
+      selectedElement = null;
+      console.log("Cleared selected highlight");
+      return;
+    }
+    selectedElement = element;
+    var rect = element.getBoundingClientRect();
+    console.log("Selected element rect:", rect);
+
+    // 更新选中高亮框位置
+    selectedBox.style.display = "block";
+    selectedBox.style.left = "".concat(rect.left - 2, "px");
+    selectedBox.style.top = "".concat(rect.top - 2, "px");
+    selectedBox.style.width = "".concat(rect.width + 4, "px");
+    selectedBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新选中标签位置和内容
+    selectedLabel.style.display = "block";
+    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 28;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 5) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
+    if (labelLeft + labelWidth > window.innerWidth - 10) {
+      labelLeft = window.innerWidth - labelWidth - 10;
+    }
+    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
+    selectedLabel.style.top = "".concat(labelTop, "px");
+    console.log("Selected highlight positioned at:", {
+      left: selectedBox.style.left,
+      top: selectedBox.style.top,
+      width: selectedBox.style.width,
+      height: selectedBox.style.height
+    });
+  }
+  function getElementSelector(element) {
+    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
+    var segments = [];
+    var current = element;
+    while (current !== document.documentElement) {
+      var selector = '';
+      // 优先检查唯一ID
+      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
+        segments.unshift("#".concat(current.id));
+        break; // ID唯一，无需继续向上
+      }
+
+      // 生成类名选择器（取第一个有效类名）
+      var classes = Array.from(current.classList).filter(function (c) {
+        return !c.startsWith('js-');
+      });
+      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
+
+      // 生成位置索引（nth-child）
+      var tag = current.tagName.toLowerCase();
+      if (!className) {
+        var siblings = Array.from(current.parentNode.children);
+        var index = siblings.findIndex(function (el) {
+          return el === current;
+        }) + 1;
+        selector = "".concat(tag, ":nth-child(").concat(index, ")");
+      } else {
+        selector = className;
+      }
+      segments.unshift(selector);
+      current = current.parentElement;
+    }
+
+    // 处理根元素
+    if (current === document.documentElement) {
+      segments.unshift('html');
+    }
+    return segments.join(' > ');
+  }
+
+  // 获取元素文本内容
+  function getElementText(element) {
+    var _element$textContent;
+    if (element.tagName === "INPUT") {
+      return element.value || element.placeholder || "";
+    }
+    if (element.tagName === "TEXTAREA") {
+      return element.value || element.placeholder || "";
+    }
+    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
+    return text.length > 50 ? text.substring(0, 50) + "..." : text;
+  }
+
+  // 获取元素属性信息
+  function getElementAttributes(element) {
+    var attrs = {};
+    for (var i = 0; i < element.attributes.length; i++) {
+      var attr = element.attributes[i];
+      attrs[attr.name] = attr.value;
+    }
+    return attrs;
+  }
+
+  // 鼠标悬停事件处理
+  function handleMouseOver(e) {
+    if (!highlightEnabled) return;
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免高亮 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 如果是已选中的元素，不显示悬停高亮
+    if (target === selectedElement) {
+      highlightBox.style.display = "none";
+      tagLabel.style.display = "none";
+      return;
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+
+    // 更新悬停高亮框位置
+    highlightBox.style.display = "block";
+    highlightBox.style.left = "".concat(rect.left - 2, "px");
+    highlightBox.style.top = "".concat(rect.top - 2, "px");
+    highlightBox.style.width = "".concat(rect.width + 4, "px");
+    highlightBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新标签位置和内容
+    tagLabel.style.display = "block";
+    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 22;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 0) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
+      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
+    }
+    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
+    tagLabel.style.top = "".concat(labelTop, "px");
+
+    // 发送消息到父窗口
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 鼠标离开事件处理
+  function handleMouseOut(e) {
+    if (!highlightEnabled) return;
+    var relatedTarget = e.relatedTarget;
+
+    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
+    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
+      return;
+    }
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: null,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 点击事件处理
+  function handleClick(e) {
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免处理 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 检查是否是交互元素，这些元素需要保留默认行为
+    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
+
+    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
+    if (highlightEnabled) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+    console.log("Element clicked:", {
+      tagName: target.tagName,
+      selector: selector,
+      rect: rect
+    });
+
+    // 立即更新选中高亮
+    updateSelectedHighlight(target);
+
+    // 隐藏悬停高亮，因为现在是选中状态
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-click",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 监听来自父窗口的消息
+  function handleParentMessage(event) {
+    console.log("Received message from parent:", event.data);
+    if (event.data.type === "iframe-highlight-toggle") {
+      var enabled = event.data.enabled;
+      console.log("Highlight toggle:", enabled);
+      if (enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "enable-iframe-highlight") {
+      console.log("Enable iframe highlight");
+      enableHighlight();
+    } else if (event.data.type === "disable-iframe-highlight") {
+      console.log("Disable iframe highlight");
+      disableHighlight();
+    } else if (event.data.type === "toggle-iframe-highlight") {
+      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
+      console.log("Toggle iframe highlight to:", _enabled);
+      if (_enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "update-selected-element") {
+      var selector = event.data.selector;
+      console.log("Update selected element with selector:", selector);
+      if (selector) {
+        try {
+          var element = document.querySelector(selector);
+          console.log("Found element by selector:", element);
+          updateSelectedHighlight(element);
+        } catch (error) {
+          console.warn("Failed to select element:", error);
+          updateSelectedHighlight(null);
+        }
+      } else {
+        updateSelectedHighlight(null);
+      }
+    } else if (event.data.type === "clear-selected-element") {
+      console.log("Clear selected element");
+      updateSelectedHighlight(null);
+    }
+  }
+
+  // 启用高亮功能
+  function enableHighlight() {
+    console.log("Enabling highlight");
+    document.addEventListener("mouseover", handleMouseOver, true);
+    document.addEventListener("mouseout", handleMouseOut, true);
+    document.addEventListener("click", handleClick, true);
+    highlightEnabled = true;
+    overlay.style.display = "block";
+  }
+
+  // 禁用高亮功能
+  function disableHighlight() {
+    console.log("Disabling highlight");
+    highlightEnabled = false;
+    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
+    // 这样可以保留选中状态的显示
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
+  }
+
+  // 完全禁用高亮功能（移除所有监听器）
+  function fullyDisableHighlight() {
+    console.log("Fully disabling highlight");
+    highlightEnabled = false;
+    document.removeEventListener("mouseover", handleMouseOver, true);
+    document.removeEventListener("mouseout", handleMouseOut, true);
+    document.removeEventListener("click", handleClick, true);
+    overlay.style.display = "none";
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    selectedBox.style.display = "none";
+    selectedLabel.style.display = "none";
+  }
+
+  // 添加事件监听
+  enableHighlight();
+  window.addEventListener("message", handleParentMessage);
+
+  // 暴露全局函数供外部调用
+  window.__iframeHighlightControl = {
+    enable: enableHighlight,
+    disable: disableHighlight,
+    fullyDisable: fullyDisableHighlight,
+    isEnabled: function isEnabled() {
+      return highlightEnabled;
+    },
+    getSelectedElement: function getSelectedElement() {
+      return selectedElement;
+    },
+    updateSelected: updateSelectedHighlight,
+    // 通过消息发送开关控制
+    sendToggleMessage: function sendToggleMessage(enabled) {
+      window.parent.postMessage({
+        type: 'iframe-highlight-status',
+        enabled: enabled || highlightEnabled,
+        source: 'iframe-highlight-injector'
+      }, '*');
+    }
+  };
+
+  // 通知父窗口脚本已加载
+  try {
+    window.parent.postMessage({
+      type: "iframe-highlight-ready",
+      data: {
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        timestamp: Date.now()
+      },
+      source: "iframe-highlight-injector"
+    }, "*");
+  } catch (error) {
+    console.warn("无法发送就绪消息到父窗口:", error);
+  }
+
+  // 清理函数
+  window.__iframeHighlightCleanup = function () {
+    fullyDisableHighlight();
+    window.removeEventListener("message", handleParentMessage);
+    if (overlay.parentElement) {
+      overlay.parentElement.removeChild(overlay);
+    }
+    delete window.__iframeHighlightInitialized;
+    delete window.__iframeHighlightCleanup;
+  };
+})();
+
+</script>
+</body>
+</html>

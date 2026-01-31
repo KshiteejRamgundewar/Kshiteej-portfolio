@@ -1,0 +1,132 @@
+[
+  {
+    "query": "abstract dark futuristic technology background, deep blue and purple gradient, minimal, 4k",
+    "image_info": {
+      "url": "https://img.freepik.com/free-vector/abstract-wavy-background-digital-technology-futuristic-vector-line-design_314614-1624.jpg?semt=ais_hybrid&w=740&q=80",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 53104,
+      "width": 740,
+      "height": 416,
+      "total_pixels": 307840,
+      "basic_score": 0.790689908364563,
+      "file_name": "abstract-dark-futuristic-tech-purple-blue-gradient.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 96.0,
+      "explanation": "The image perfectly matches the search query and prompt. It features a dark, minimal, and futuristic aesthetic with a clean purple and blue gradient across abstract wave patterns. The resolution appears high with sharp line work and no visible watermarks.",
+      "file_name": "abstract-dark-futuristic-tech-purple-blue-gradient.jpg",
+      "caption": "A sophisticated abstract background featuring flowing, wavy lines in a deep purple and blue gradient against a dark black backdrop, evoking a sense of futuristic technology and digital connectivity.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "abstract dark futuristic technology background, deep blue and purple gradient, minimal, 4k",
+    "image_info": {
+      "url": "https://media.gettyimages.com/id/1729677718/video/flying-over-data-patterns-curved-lines-abstract-technology-background-futuristic-landscape.jpg?s=640x640&k=20&c=6R3mJTM8v-zqxWBK3qQXdGuz0Nc2jZXNZxFIeCUtFuY=",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 34915,
+      "width": 768,
+      "height": 432,
+      "total_pixels": 331776,
+      "basic_score": 0.796458061611322,
+      "file_name": "abstract-dark-futuristic-tech-background-blue.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "The image perfectly aligns with the search query and prompt. It features a dark, abstract, and futuristic aesthetic with glowing blue tech-inspired lines that resemble data flows or topographical maps. While the purple gradient is very subtle, the overall composition and color palette fit the 'minimal' and 'high-tech' requirements exceptionally well.",
+      "file_name": "abstract-dark-futuristic-tech-background-blue.jpg",
+      "caption": "An abstract digital landscape featuring glowing blue topographical lines and light particles on a dark background, evoking a futuristic technology theme.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "abstract dark futuristic technology background, deep blue and purple gradient, minimal, 4k",
+    "image_info": {
+      "url": "https://img.freepik.com/free-vector/gradient-black-technology-background_23-2149209060.jpg?semt=ais_hybrid&w=740&q=80",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 22018,
+      "width": 740,
+      "height": 493,
+      "total_pixels": 364820,
+      "basic_score": 0.8064467828608387,
+      "file_name": "dark_futuristic_tech_geometric_background.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 75.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 88.0,
+      "explanation": "The image perfectly captures the 'dark futuristic tech' aesthetic requested in the search query, with clean lines and geometric complexity. However, it fails to meet the specific color requirements of the prompt, which requested a 'deep blue and purple gradient.' Instead, the image is strictly monochrome (black, grey, and white). Despite the color discrepancy, the technical execution is flawless.",
+      "file_name": "dark_futuristic_tech_geometric_background.jpg",
+      "caption": "A high-resolution abstract background with a dark, futuristic technology theme, featuring intricate grey geometric shapes and glowing white circuitry lines on a black field.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "minimalist deep space background with subtle stars, high quality",
+    "image_info": {
+      "url": "https://static.vecteezy.com/system/resources/thumbnails/076/493/491/large/blue-starry-night-sky-motion-background-4k-minimalist-deep-space-animation-with-glowing-stars-for-astronomy-projects-peaceful-meditation-magic-dreams-and-elegant-digital-backdrops-video.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 8714,
+      "width": 800,
+      "height": 450,
+      "total_pixels": 360000,
+      "basic_score": 0.8024608060017379,
+      "file_name": "minimalist-deep-space-stars-background.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 85.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image perfectly matches the search query for a minimalist deep space background. It features a clean, dark blue gradient with sharp, stylized stars. There are no watermarks. The only minor issue is some slight color banding in the dark gradient background, which is common in digital gradients, but it remains a very high-quality asset for backgrounds or UI design.",
+      "file_name": "minimalist-deep-space-stars-background.jpg",
+      "caption": "A minimalist dark blue deep space background featuring a subtle scattering of glowing blue stars and twinkles across a clean gradient.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "minimalist deep space background with subtle stars, high quality",
+    "image_info": {
+      "url": "https://img.freepik.com/free-vector/colorful-galaxy-watercolor-doodle-with-rocket-black-background_53876-118474.jpg?semt=ais_hybrid&w=740&q=80",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 34432,
+      "width": 740,
+      "height": 416,
+      "total_pixels": 307840,
+      "basic_score": 0.7880742169781144,
+      "file_name": "minimalist-space-background-rocket-planet.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 92.0,
+      "clarity_score": 88.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image perfectly aligns with the search query for a minimalist space background. It features a clean, illustrative style with significant negative space on the right, making it ideal for overlays or desktop backgrounds. The quality is high with no visible watermarks.",
+      "file_name": "minimalist-space-background-rocket-planet.jpg",
+      "caption": "A minimalist illustrative background of deep space, featuring a large blue and gold marbled planet, a small stylized rocket ship, and scattered stars against a dark navy blue backdrop.",
+      "recommend": true,
+      "error": ""
+    }
+  }
+]
